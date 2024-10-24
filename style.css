@@ -1,0 +1,129 @@
+/* Reseta alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo principal */
+body {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Container que envolve tudo */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Login Section */
+.login-section {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Logo */
+.logo {
+    margin-bottom: 20px;
+}
+
+/* Formulário de login */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.login-form button {
+    width: 100%;
+    background-color: #3897f0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Divider com a palavra "OU" */
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    color: #8e8e8e;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    margin: 0 5px;
+}
+
+.divider span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Login com Facebook */
+.fb-login {
+    background-color: #4267b2;
+    color: white;
+    margin-top: 15px;
+}
+
+/* Promo image (visível apenas em desktop) */
+.promo-image {
+    display: none;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.app-links a img {
+    width: 120px;
+    margin: 5px;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .promo-image {
+        display: block;
+        margin-left: 50px;
+    }
+
+    .promo-image img {
+        width: 450px;
+    }
+}
